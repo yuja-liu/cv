@@ -1,354 +1,317 @@
+<!DOCTYPE html><!-- html5 declaration -->
 <html>
 <head>
-  <title>Yujia Liu - Curriculum vitae</title>
+  <title>Yujia Liu's CV</title>
+  <!-- for high dpi, mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="utf-8">
+  <!-- include bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    .upper {
-      text-transform: uppercase;
-    }
-    hr {
-      margin-top: 0.7rem;
-      margin-bottom: 0.7rem;
-    }
-    p {
-      margin-bottom: 0.3rem;
-    }
-    body {
-      background-color: #ecf0f1;
-    }
-    .container {
-      background-color: white;
-      box-shadow: 0px 0px 10px 3px #bdc3c7;
-    }
-    .row {
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    }
-    ul {
-      margin-bottom: 0.5rem;
-    }
-    h4 {
-      color: #7f8c8d;
-    }
-    .nobullet {
-      list-style-type: none;
-    }
-
-    /* Styles for print */
-    .row {
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-
-    /* put ul bullet inside */
-    .inside-bullet {
-      list-style-position: inside;
-    }
-  </style>
 </head>
+<style>
+  .container{
+    /* page paddings */
+    /* The following padding will be replaced before generating a pdf */
+    padding: 3em 3em 3em 3em;
+    /* !!! do not change margin, margins are used for horizontal aligning */
+  }
+  .title{
+    /* Sans-serif */
+    font-family:  Helvetica, sans-serif;
+  }
+  .detail{
+    /* serif */
+    font-family: Georgia, serif;
+  }
+  .section{
+    font-size: 1.33em;
+    font-weight: bold;
+  }
+  .position{
+    font-weight: bold;
+  }
+  .institute{
+    font-style: italic;
+  }
+  .no_break{
+    /* for pdf generation: this class cannot be span across pages */
+    page-break-inside: avoid;
+  }
+</style>
 <body>
-  <div class="container my-3">
-    <div class="row">
-      <div class="col-md-9 col-6 mt-3">
-        <h2><b>Yujia(Randolph) Liu</b></h2>
+  <!-- the minimalist principal-->
+  <!-- do NOT use unnecessary styles unless helps expressing -->
+  <!-- responsive design is ABANDONED for the ease of pdf conversion -->
+  <!-- margin size: -->
+  <!-- m-1 0.25 rem, m-2 0.5 rem, m-3 1 rem, m-4 1.5 rem, m-5 3 rem -->
+  <!-- 1 rem = 16 px = 12 pt = 1/6 inch -->
+  <div class="container">
+    <!-- name and contacts -->
+    <div class="row no_break">
+      <div class="col-6 title" id="name">
+        <h1>Yujia Liu</h1>
       </div>
-      <div class="col-md-3 col-6 mt-3">
-        <p class="d-inline align-bottom"><a href="index-chs.html">中文</a>&nbsp;&nbsp;&nbsp;&nbsp;English</p>
-      </div>
-      <div class="col-12 my-0">
-        <hr />
-      </div>
-      <div class="col-12">
-        <ul class="row mx-0 px-0">
-          <li class="col-md-6 col-12 nobullet">
-            <p><span class="fas fa-phone"></span> (+86)13720751581</p>
-          </li>
-          <li class="col-md-6 col-12 nobullet">
-            <p>
-              <span class="fas fa-envelope"></span>
-              <a href="mailto:rdfliu@uchicago.edu">rdfliu@uchicago.edu</a>
-              / <a href="mailto:rainl199922@gmail.com">rainl199922@gmail.com</a>
-            </p>
-          </li>
-          <!-- <li class="col-md-6 col-12 nobullet">
-            <p><span class="fas fa-home"></span> 28 Xianning West Road, Xi'an, Shaanxi, China 710049</p>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-12">
-        <h4 class="upper">Fields of interest</h4>
-        <hr />
-      </div>
-      <div class="col-12">
-        <p>
-          High-throughput technologies and quantitative modeling in synthetic biology | Directed evolution | Biological regulatory networks | Machine learning in -omics
-        </p>
+      <div class="col-6 detail" id="contacts">
+        <div class="row">
+          <div class="col-12">Phone: +44 7561-730-526</div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            Email: <a href="mailto:yl759@cam.ac.uk">yl759@cam.ac.uk</a>
+          </div>
+        </div>
+        <div class="row">
+          <civ class="col-12">
+            Address: Swirles Court, B5 304, Pheasant Drive, Cambridge
+          </civ>
+        </div>
       </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-12">
-        <h4 class="upper">Education background</h4>
-        <hr />
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <h6><b>Xi’an Jiaotong University</b></h6>
-      </div>
-      <div class="col-lg-5 col-md-6 col-12">
-        <p>Juvenile Pilot Class (skipped high school)</p>
-      </div>
-      <div class="col-lg-3 col-md-12">
-        <p><b>09/2014 - 06/2017</b></p>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 col-12">
-        <h6><b>University of California, Berkeley</b></h6>
-      </div>
-      <div class="col-lg-5 col-md-6 col-12">
-        <p>BISP visiting student</p>
-      </div>
-      <div class="col-lg-3 col-12">
-        <p><b>08/2018 - 12/2018</b></p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <h6><b>Xi’an Jiaotong University</b></h6>
-      </div>
-      <div class="col-lg-5 col-md-6 col-6">
-        <p>Bachelor of Engineering</p>
-      </div>
-      <div class="col-lg-3 col-12">
-        <p><b>09/2017 – 06/2020</b></p>
-      </div>
-      <div class="col-lg-6 col-12">
-        <p>Major: Bioengineering(Honors Science Program of Chemical Biology)</p>
-      </div>
-      <div class="col-lg-3 col-6">
-        <p>GPA: 3.87/4.0&nbsp;&nbsp;Ranking: 1/30</p>
-      </div>
-      <div class="col-lg-3 col-6">
-        <p>Major GPA: 3.98/4.0</p>
-      </div>
-      <div class="col-md-6 col-12">
-        <p><b>TOEFL</b>&nbsp;&nbsp;&nbsp;&nbsp;115 (R:30 L:29 S:26 W:30)</p>
-      </div>
-      <div class="col-md-6 col-12">
-        <p><b>GRE General</b>&nbsp;&nbsp;&nbsp;&nbsp;331 (V:162 Q:169 AW:3.5)</p>
+    <!-- education -->
+    <div class="row mt-3" id="education">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col title section">EDUCATION</div>
+        </div>
+        <div class="row mt-2 no_break" id="cam">
+          <div class="col-9 title position">M.Phil. in Computational Biology</div>
+          <div class="col-3 title position">Aug 2021 (expected)</div>
+          <div class="col-12 title institute">The University of Cambridge, Cambridge, UK</div>
+        </div>
+        <div class="row mt-2 no_break" id="xjtu">
+          <div class="col-9 title position">B.Eng. in Bioengineering, Honors Science Program</div>
+          <div class="col-3 title position">Jun 2020</div>
+          <div class="col-12 title institute">Xi'an Jiaotong University, Xi'an, China</div>
+          <div class="col-12 detail">Thesis: A Computational Method for Automated
+            Modeling of Logic Gates in Synthetic Circuits and Human Transcriptome (top 1%) | Advisor: Prof. Tielin Yang</div>
+          <div class="col-12 detail">Honors Youth Program
+            (skipping high school)</div>
+          <div class="col-12 detail">GPA: 3.92/4.3 | Ranking: 1/30</div>
+        </div>
+        <div class="row mt-2 no_break" id="berkeley">
+          <div class="col-9 title position">Exchange semester</div>
+          <div class="col-3 title position">Fall 2018</div>
+          <div class="col-12 title institute">
+            University of California, Berkeley, Berkeley, CA
+          </div>
+          <div class="col-12 detail">GPA: 4.0/4.0</div>
+        </div>
       </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-12">
-        <h4 class="upper">Research Experience</h4>
-        <hr />
-      </div>
-      <!-- <div class="col-md-9 col-12">
-        <h6><b>Bluepha Co., Ltd.</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <h6><b>Shenzhen, China</b></h6>
-      </div>
-      <div class="col-md-9 col-6">
-        <p><i>Workshop Participant</i></p>
-      </div>
-      <div class="col-md-3 col-6">
-        <p><i>01/2018</i></p>
-      </div>
-      <div class="col-12">
-        <ul>
-          <li>Applied Gibson & Golden Gate assembly in building a PHA(Polyhydroxyalkanoate, a bioplastic) producing <i>E. coli</i> strain</li>
-          <li>Cloned a library of RBS into the plasmid and screened for optimal production</li>
-        </ul>
-      </div> -->
-      <div class="col-md-9 col-12">
-        <h6><b>International Genetically Engineered Machine Competition (iGEM)</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <h6><b>Boston, MA</b></h6>
-      </div>
-      <div class="col-md-9 col-6">
-        <p><i>Team Leader</i></p>
-      </div>
-      <div class="col-md-3 col-6">
-        <p><i>02/2018 - 10/2018</i></p>
-      </div>
-      <div class="col-12">
-        <ul>
-          <li>
-            <i>DEcose, a biosensor-based directed evolution platform in promoting D-psicose productivity (<a href="http://2018.igem.org/Team:XJTU-China">Wiki</a>)</i>
-          </li>
-          <li>
-            Won a Gold Medal as the first iGEM team in our university. We built genetic circuits to improve the bioproduction of D-psicose, a zero-calorie sweet sugar. A patent application is submitted (No. 202010380209.0).
-          <li>
-            When a mutant library is introduced, less productive mutants are killed by the cellular program under the pressure of antibiotics.
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>National Undergraduate Training Programs for Innovation</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <h6><b>Xi'an, China</b></h6>
-      </div>
-      <div class="col-md-9 col-6">
-        <p><i>Team Leader</i></p>
-      </div>
-      <div class="col-md-3 col-6">
-        <p><i>04/2018 - 06/2019</i></p>
-      </div>
-      <div class="col-12">
-        <ul>
-          <li>
-            <i>Pan-cancer BNIP genes methylation landscape and significance in prognosis</i>
-          </li>
-          <li>
-            Identified the hypermethylation of BNIP3 in renal cancer as a novel biomarker for patient prognosis. Potentially helps drug development.
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>Lawrence Berkeley National Lab</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <h6><b>Berkeley, CA</b></h6>
-      </div>
-      <div class="col-md-9 col-6">
-        <p><i>Visiting Student Researcher</i></p>
-      </div>
-      <div class="col-md-3 col-6">
-        <p><i>07/2019 - 10/2019</i></p>
-      </div>
-      <div class="col-12">
-        <ul>
-          <li>
-            Supervised by Prof. Adam Arkin. I was in the ENIGMA group, a consortium of 19 labs across the US with Prof. Arkin as the technical co-director
-          <li>
-            Developed the ENIGMA Explorer (<a href="http://isolates.genomics.lbl.gov">http://isolates.genomics.lbl.gov</a>, <a href="https://github.com/RandolphLiu/enigma_explorer">Github</a>), an open-source, web-based browser for ENIGMA isolates and growth plates with a point-and-click GUI and APIs for access with scripts
-          </li>
-          <li>
-            Hypothesized a microbial "warfare" by siderophore, a ferric ion chelator, based on ENIGMA Explorer and Random Barcode Transposon-site Sequencing (RB-Tnseq), which potentially helps to control a plant pathogen
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>Undergraduate Graduation Thesis</b></h6>
-      </div>
-      <div class="col-md-3 col-6">
-        <p><i>12/2019 - 06/2020</i></p>
-      </div>
-      <div class="col-12">
-        <ul>
-          <li>
-            <i>A computational method for automated modeling of ultrasensitivity and logic gates in synthetic circuits and human transcriptome</i>, <a href="https://github.com/RandolphLiu/biologic">GitHub</a>
-          </li>
-        </ul>
+    <!-- coursework -->
+    <div class="row mt-3" id="coursework">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">SELECTED COURSEWORK</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col-4 detail">Deep Learning</div>
+          <div class="col-4 detail">Machine Learning</div>
+          <div class="col-4 detail">Genetic Sequence Analysis</div>
+          <div class="col-4 detail">Genomics</div>
+          <div class="col-4 detail">Proteomics</div>
+          <div class="col-4 detail">Principles of Synthetic Biology</div>
+          <div class="col-4 detail">Genetic Engineering</div>
+          <div class="col-8 detail">Computational Molecular and Cell Biology</div>
+        </div>
       </div>
     </div>
-    <div class="row my-4">
-      <div class="col-12">
-        <h4 class="upper">HONORS & AWARDS</h4>
-        <hr />
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>China Undergraduate Mathematical Contest in Modeling</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>First Prize in Shaanxi Province</i></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>12/2016</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>Siyuan Scholarship</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>11/2016, 11/2017</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>China Scholarship Council Scholarship</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>06/2018</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>First Prize Scholarship at Xi'an Jiaotong University</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>11/2018</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>International Genetically Engineered Machine Competition</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Gold Medal as a team leader</i></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>10/2018</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>Principal Class Scholarship</b> <i>(10 undergraduates per year)</i> <b>at Xi'an Jiaotong University</b></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>11/2019</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>International Genetically Engineered Machine Competition</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Gold Medal as an advisor</i></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>11/2019</b></p>
-      </div>
-      <div class="col-md-9 col-12">
-        <h6><b>Outstanding Undergraduate Thesis</b> <i>(top 1%)</i></h6>
-      </div>
-      <div class="col-md-3 col-12">
-        <p><b>06/2020</b></p>
+    <!-- research experience -->
+    <div class="row mt-3" id="research">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">RESEARCH EXPERIENCE</div>
+        </div>
+        <div class="row mt-2 no_break" id="surface">
+          <div class="col-9 title position">Summer Intern</div>
+          <div class="col-3 title position">Aug 2020</div>
+          <div class="col-9 title institute">Westlake University, Hangzhou, China</div>
+          <div class="col-3 title institute">Advisor: Dr. Jing Huang</div>
+          <div class="col">
+            <ul class="row detail">
+              <li>
+                Simulated, using molecular dynamics (MD), how the surface tension of NaCl solution differs
+                under CGenFF additive force field and Drude polarizable forcefield and 
+                confirmed the applicability of Gibbs adsorption theorem in these cases.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="logic_gates">
+          <div class="col-9 title position">Bachelor's Thesis</div>
+          <div class="col-3 title position">Dec 2019 – Jun 2020</div>
+          <div class="col-9 title institute">
+            Xi'an Jiaotong University, Xi'an, China
+          </div>
+          <div class="col-3 title institute">Advisor: Prof. Tielin Yang</div>
+          <div class="col">
+            <ul class="row detail">
+              <li>
+                Designed <a href="https://github.com/RandolphLiu/BioLoGI">BioLoGI</a>
+                (<u>Bio</u>logical <u>Lo</u>gic <u>G</u>ate <u>I</u>nference system),
+                a compuational method for automated analyzing logic gate–like models in synthetic circuits and human transcriptome.
+              </li>
+              <li>
+                Detected logic gate clusters pivoting REG1A in lipase metabolic pathways and EGFL7 in cardiovascular tissues 
+                leveraging GTEx bulk RNA sequencing data.
+              </li>
+              <li>
+                Applied BioLoGI to single cell RNA sequencing data of embryonic stem cells and
+                identified important roles played by lncRNA, which involve in about 40% of single-input logic gates.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="isolates_browser">
+          <div class="col-9 title position">Visiting Researcher</div>
+          <div class="col-3 title position">Jul 2019 – Sept 2019</div>
+          <div class="col-9 title institute">
+            Lawrence Berkeley National Laboratory, Berkeley, CA
+          </div>
+          <div class="col-3">Advisor: Prof. Adam Arkin</div>
+          <div class="col">
+            <ul class="row detail">
+              <li>
+                Built and still maintaining <a href="http://isolates.genomics.lbl.gov/index">The ENIGMA Explorer</a>
+                (<a href="https://github.com/RandolphLiu/enigma_explorer">source code</a>), 
+                a web service for searching and analyzing bacterial isolates information 
+                for ENIGMA, a consortium of 19 labs across the US.
+              </li>
+              <li>
+                Implemented both the point-and-click GUI and script-accessible API, upon which allowing flexible workflows to be built.
+              </li>
+              <li>
+                Studied the "warfare" between the plant pathogen <i>Xanthomonas campestris</i> pv. <i>campestris</i>
+                and several <i>Pseudomonas</i> using Random Barcode Transposon-site Sequencing (RB-Tnseq).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="bnip">
+          <div class="col-9 title position">Research Assistant</div>
+          <div class="col-3 title position">Apr 2018 – Jun 2019</div>
+          <div class="col-9 title institute">
+            Xi'an Jiaotong University, Xi'an, China
+          </div>
+          <div class="col-3 title institute">Advisor: Prof. Tielin Yang</div>
+          <div class="col">
+            <ul class="row detail">
+              <li>Discovered BNIP3 as a novel methylation biomarker for renal cancer and breast cancer using differential expression analysis,
+                log-rank test, Cox proportional harzards regression, and co-expression network.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="iGEM">
+          <div class="col-9 title position">
+            Team Leader of International Genetically Engineered Machine (iGEM) Competition
+          </div>
+          <div class="col-3 title position">Feb 2018 – Oct 2018</div>
+          <div class="col-12 title institute">Advisor: Prof. Xiaoyun Lu</div>
+          <div class="col">
+            <ul class="row detail">
+              <li>
+                Engineered <i>E. coli</i> with a genetic circuit that converts the production of D-psicose, a novel healthy sugar,
+                to the survival benefit of mutants with more than 30-fold sensitivity.
+              </li>
+              <li>
+                Performed directed evolution experiments on the engineered bacteria carrying shuffling PCR-constructed 
+                sequence library to identify optimal D-psicose producing strain, 
+                which the method is named <a href="http://2018.igem.org/Team:XJTU-China">DEcose</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row my-4">
-      <div class="col-12">
-        <h4 class="upper">Activities</h4>
-        <hr />
-      </div>
-      <div class="col-12">
-        <ul class="row">
-          <li class="col-lg-3 col-md-6 col-12 inside-bullet">
-            <h6 class="d-inline"><b>Tiaozhan.com</b></h6>
+    <!-- patents -->
+    <div class="row mt-3" id="patents">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">PATENTS</div>
+        </div>
+        <ul class="row detail mt-2 no_break">
+          <li>
+            Dan Tan, <b>Yujia Liu</b>, Xinlei Fang, Peiyao Fan, Yun Yu, Xiaoyun Lu.
+            2020. Recombinant Plasmid and Engineered Bacteria, Their Construction Method, and the Application in Promoting the Yield of D-psicose.
+            China Patent 202010380209.0, filed May 08, 2020. Patent pending.
           </li>
-          <li class="col-lg-3 col-md-6 col-12 nobullet">
-            <p><i>Operation & Maintenance Director</i></p>
-          </li>
-          <li class="col-lg-3 col-md-6 col-12 inside-bullet">
-            <h6 class="d-inline"><b>IBM Technology Club</b></h6>
-          </li>
-          <li class="col-lg-3 col-md-6 col-12 nobullet">
-            <p><i>Leader of Qt Department</i></p>
+          <li>
+            Tielin Yang, <b>Yujia Liu</b>, Congcong Liu, Yan Guo, Shanshan Dong.
+            2020. Automated Modeling Method for Genetic Circuits and Transcriptional Regulations.
+            China Patent 202011035802.8, filed September 27, 2020. Patent pending.
           </li>
         </ul>
       </div>
     </div>
-    <div class="row my-4 pb-5">
-      <div class="col-12">
-        <h4 class="upper">Skills</h4>
-        <hr />
+    <!-- leadership -->
+    <div class="row mt-3" id="leadership">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">LEADERSHIP</div>
+        </div>
+        <div class="row mt-2 no_break" id="tiaozhan">
+          <div class="col-9 title position">Operation and Maintenance Director</div>
+          <div class="col-3 title position">Jun 2018 – Jun 2019</div>
+          <div class="col-12 title institute">Tiaozhan.com</div>
+        </div>
+        <div class="row mt-2 no_break" id="ibm">
+          <div class="col-9 title position">Leader of Qt Department</div>
+          <div class="col-3 title position">Jun 2017 – Jun 2018</div>
+          <div class="col-12 title institute">IBM Students Technology Club</div>
+        </div>
       </div>
-      <div class="col-12">
-        <ul>
-          <li>
-            <b>Programming Languages:</b> (1) Desktop Apps: C++ (Qt) | C# | (2) Mathematical Modelling: Python | MATLAB | R | MiniZinc (3) Web Development: HTML & CSS | Javascript | PHP | Golang
-          </li>
-          <li>
-            <b>Lab Skills:</b> Plasmid & Primer Design | PCR | DNA Extraction | DNA Assembly: Golden Gate, Gibson and BioBrick | HPLC | Microplate Reader
-          </li>
-          <li>
-            <b>Server Maintenance:</b> Linux (Shell) | Docker | Nginx | Jenkins
-          </li>
-          <li>
-            <b>Multimedia and Creativity:</b> Autodesk 3ds Max | Adobe Photoshop | Adobe Premiere | Adobe After Effects
-          </li>
-          <!-- <li>
-            <b>3D Computer Graphics:</b> Autodesk 3ds Max | ZBrush
-          </li> -->
-        </ul>
+    </div>
+    <!-- honors & awards -->
+    <div class="row mt-3" id="honors">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">HONORS &amp; AWARDS</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col-9 title position">Outstanding Bachelor's Thesis (top 1%)</div>
+          <div class="col-3 title position">Jun 2020</div>
+          <div class="col-9 title position">Undergraduate Presidential Scholarship (10 per year)</div>
+          <div class="col-3 title position">Nov 2019</div>
+          <div class="col-9 title position">Undergraduate First Prize Scholarship</div>
+          <div class="col-3 title position">Nov 2018</div>
+          <div class="col-9 title position">Siyuan Scholarship</div>
+          <div class="col-3 title position">Nov 2017, Nov 2016</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col-9 title position">
+            iGEM Gold Medal, Advisor
+          </div>
+          <div class="col-3 title position">Nov 2019</div>
+          <div class="col-9 title position">
+            iGEM Gold Medal, Team Leader
+          </div>
+          <div class="col-3 title position">Nov 2018</div>
+        </div>
+      </div>
+    </div>
+    <!-- skills -->
+    <div class="row mt-3" id="skills">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">SKILLS</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col-4 title position">Academic Softwares:</div>
+          <div class="col-8 detail">
+            MATLAB, Qt, Docker, CHARMM, OpenMM, Autodesk 3ds Max
+          </div>
+          <div class="col-4 title position">Programming Languages:</div>
+          <div class="col-8 detail">
+            C++, C#, Python, R, JavaScript, PHP
+          </div>
+          <div class="col-4 title position">Languages</div>
+          <div class="col-8 detail">
+            English (fluent), German (basics), Chinese (native speaker)
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- font awesome cdn -->
-  <script src="https://kit.fontawesome.com/5cea763b4d.js" crossorigin="anonymous"></script>
 </body>
 </html>

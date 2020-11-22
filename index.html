@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
-  .container{
+  body{
     /* page paddings */
-    /* The following padding will be replaced before generating a pdf */
     padding: 3em 3em 3em 3em;
     /* !!! do not change margin, margins are used for horizontal aligning */
   }
@@ -36,6 +35,20 @@
   .no_break{
     /* for pdf generation: this class cannot be span across pages */
     page-break-inside: avoid;
+  }
+  /* printing configs */
+  @media print {
+    @page {
+      margin: 2cm;
+    }
+    body {
+      /* remove existing page paddings
+      since the doc will span multiple pages, page margin is designated by @page */
+      padding: 0;
+      /* this is a rough estimation of font upscale due to 
+      margin added when printing */
+      font-size: 14pt;
+    }
   }
 </style>
 <body>
@@ -163,7 +176,7 @@
           </div>
         </div>
         <div class="row mt-2 no_break" id="isolates_browser">
-          <div class="col-9 title position">Visiting Researcher</div>
+          <div class="col-9 title position">Research Assistant</div>
           <div class="col-3 title position">Jul 2019 – Sept 2019</div>
           <div class="col-9 title institute">
             Lawrence Berkeley National Laboratory, Berkeley, CA
@@ -254,7 +267,7 @@
           <div class="col-9 title position">Operation and Maintenance Director</div>
           <div class="col-3 title position">Jun 2018 – Jun 2019</div>
           <div class="col-12 title institute">
-            Tiaozhan.com (Our student portal website, hosting e.g. a video sharing platform and an open source mirror)
+            Tiaozhan.com (Our university portal website, hosting e.g. a video sharing platform and an open-source mirror)
           </div>
         </div>
         <div class="row mt-2 no_break" id="ibm">

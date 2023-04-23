@@ -1,0 +1,208 @@
+<!DOCTYPE html><!-- html5 declaration -->
+<html>
+<head>
+  <title>Yujia Liu's CV</title>
+  <!-- for high dpi, mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <!-- include bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+  body{
+    /* page paddings */
+    padding: 3em 3em 3em 3em;
+    /* !!! do not change margin, margins are used for horizontal aligning */
+  }
+  .title{
+    /* Sans-serif */
+    font-family:  Helvetica, sans-serif;
+  }
+  .detail{
+    /* serif */
+    font-family: Georgia, serif;
+  }
+  .publication{
+    font-size: 0.875em;
+  }
+  .section{
+    font-size: 1.33em;
+    font-weight: bold;
+  }
+  .position{
+    font-weight: bold;
+  }
+  .institute{
+    font-style: italic;
+  }
+  .no_break{
+    /* for pdf generation: this class cannot be span across pages */
+    page-break-inside: avoid;
+  }
+  /* printing configs */
+  @media print {
+    @page {
+      margin: 2cm;
+    }
+    body {
+      /* remove existing page paddings
+      since the doc will span multiple pages, page margin is designated by @page */
+      padding: 0;
+      /* this is a rough estimation of font upscale due to 
+      margin added when printing */
+      font-size: 14pt;
+    }
+  }
+</style>
+<body>
+  <!-- the minimalist principal-->
+  <!-- do NOT use unnecessary styles unless helps expressing -->
+  <!-- responsive design is ABANDONED for the ease of pdf conversion -->
+  <!-- margin size: -->
+  <!-- m-1 0.25 rem, m-2 0.5 rem, m-3 1 rem, m-4 1.5 rem, m-5 3 rem -->
+  <!-- 1 rem = 16 px = 12 pt = 1/6 inch -->
+  <div class="container">
+    <!-- name and contacts -->
+    <div class="row no_break">
+      <div class="col-6 title" id="name">
+        <h1>Yujia Liu</h1>
+      </div>
+      <div class="col-6 detail" id="contacts">
+        <div class="row">
+          <div class="col-12">Phone: +1 312-927-6707</div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            Email: <a href="mailto:yujialiu@uchicago.edu">yujialiu@uchicago.edu</a>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-12">
+            Address: 5228 S. Woodlawn Ave, APT 3W, Chicago, IL
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- education -->
+    <div class="row mt-3" id="education">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col title section">EDUCATION</div>
+        </div>
+        <div class="row mt-2 no_break" id="uchi">
+          <div class="col-9 title position">Ph.D. in Biochemistry and Molecular Biophysics</div>
+          <div class="col-3 title position">2021&ndash;</div>
+          <div class="col-12 title institute">University of Chicago, Chicago, IL</div>
+        </div>
+        <div class="row mt-2 no_break" id="cam">
+          <div class="col-9 title position">M.Phil. in Computational Biology, with Distinction</div>
+          <div class="col-3 title position">2020&ndash;2021</div>
+          <div class="col-12 title institute">University of Cambridge, Cambridge, UK</div>
+        </div>
+        <div class="row mt-2 no_break" id="xjtu">
+          <div class="col-9 title position">B.Eng. in Bioengineering, Honors Science Program</div>
+          <div class="col-3 title position">2016&ndash;2020</div>
+          <div class="col-12 title institute">Xian Jiaotong University, Xi'an, China</div>
+        </div>
+        <div class="row mt-2 no_break" id="berkeley">
+          <div class="col-9 title position">Exchange program</div>
+          <div class="col-3 title position">2018</div>
+          <div class="col-12 title institute">
+            University of California Berkeley, Berkeley, CA
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- research experience -->
+    <div class="row mt-3" id="research">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">RESEARCH EXPERIENCE</div>
+        </div>
+        <div class="row mt-2 no_break" id="sigma">
+          <div class="col-9 title position">Master's Thesis</div>
+          <div class="col-3 title position">2021</div>
+          <div class="col-9 title institute">Sainsbury Laboratory, University of Cambridge</div>
+          <div class="col-3 title institute">Advisor: Dr. James Locke</div>
+          <div class="col">
+            <ul class="row detail m-0">
+              <li>
+                Modeling the dynamics of bacterial alternative sigma factors and their competition. <a href="https://github.com/yuja-liu/mphil_thesis/raw/main/thesis.pdf">Thesis</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="isolates_browser">
+          <div class="col-9 title position">Research Assistant</div>
+          <div class="col-3 title position">2019</div>
+          <div class="col-9 title institute">
+            Lawrence Berkeley National Laboratory
+          </div>
+          <div class="col-3 title institute">Advisor: Prof. Adam Arkin</div>
+          <div class="col">
+            <ul class="row detail m-0">
+              <li>
+                <a href="http://isolates.genomics.lbl.gov/index">ENIGMA Explorer</a>,
+                a web service for bacterial isolates searching and sharing, sequence analysis, and visualization of experiments
+                for ENIGMA, a consortium of 19 labs across the US focusing on microbial ecology.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 no_break" id="iGEM">
+          <div class="col-9 title position">
+            International Genetically Engineered Machine (iGEM) Competition
+          </div>
+          <div class="col-3 title position">2018</div>
+          <div class="col-9 title institute">Xian Jiaotong University</div>
+          <div class="col-3 title institute">Advisor: Prof. Xiaoyun Lu</div>
+          <div class="col">
+            <ul class="row detail m-0">
+              <li>
+                <a href="https://2018.igem.org/Team:XJTU-China">DEcose</a>, a biosensor-based directed evolution method to promote D-psicose bioproduction.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--publications-->
+    <div class="row mt-3" id="publications">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">PUBLICATION</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col">
+            <ul class="row m-0 detail publication">
+              <li>
+              Braunstein, E. M., Imada, E., Pasca, S., Wang, S., Chen, H., Alba, C., Hupalo, D. N., Wilkerson, M., Dalgard, C. L., Ghannam, J., <b>Liu, Y.</b>, Marchionni, L., Moliterno, A., Hourigan, C. S., & Gondek, L. P. (2023).
+              Recurrent germline variant in ATM associated with familial myeloproliferative neoplasms. Leukemia, 37(3), Article 3. <a href="https://doi.org/10.1038/s41375-022-01797-6">https://doi.org/10.1038/s41375-022-01797-6</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- honors & awards -->
+    <div class="row mt-3" id="honors">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">HONORS &amp; AWARDS</div>
+        </div>
+        <div class="row mt-2 no_break">
+          <div class="col-9 title position">Dean's International Student Fellowship</div>
+          <div class="col-3 title position">2022</div>
+          <div class="col-12 title institute">University of Chicago</div>
+          <div class="col-9 title position">Outstanding Bachelor's Thesis</div>
+          <div class="col-3 title position">2020</div>
+          <div class="col-12 title institute">Xian Jiaotong University</div>
+          <div class="col-9 title position">Presidential Scholarship</div>
+          <div class="col-3 title position">2019</div>
+          <div class="col-12 title institute">Xian Jiaotong University</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

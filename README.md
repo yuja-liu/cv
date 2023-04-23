@@ -2,8 +2,7 @@
 
 ## Website
 
-My CV is hosted on [cv.randolphliu.com](http://cv.randolphliu.com).
-Welcome to stop by!
+Announcing new website! [yuja.bio](http://cv.yuja.bio)
 
 ## Create PDF
 

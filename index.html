@@ -22,6 +22,9 @@
     /* serif */
     font-family: Georgia, serif;
   }
+  .publication{
+    font-size: 0.875em;
+  }
   .section{
     font-size: 1.33em;
     font-weight: bold;
@@ -65,9 +68,11 @@
         <h1>Yujia Liu</h1>
       </div>
       <div class="col-6 detail" id="contacts">
+        <!--
         <div class="row">
           <div class="col-12">Phone: +1 312-927-6707</div>
         </div>
+        -->
         <div class="row">
           <div class="col-12">
             Email: <a href="mailto:rdfliu@uchicago.edu">rdfliu@uchicago.edu</a>
@@ -86,53 +91,27 @@
         <div class="row no_break">
           <div class="col title section">EDUCATION</div>
         </div>
+        <div class="row mt-2 no_break" id="uchi">
+          <div class="col-9 title position">Ph.D. in Biochemistry and Molecular Biophysics</div>
+          <div class="col-3 title position">2021&ndash;</div>
+          <div class="col-12 title institute">University of Chicago, Chicago, IL</div>
+        </div>
         <div class="row mt-2 no_break" id="cam">
-          <div class="col-9 title position">M.Phil. in Computational Biology</div>
-          <div class="col-3 title position">Aug 2021</div>
+          <div class="col-9 title position">M.Phil. in Computational Biology, with Distinction</div>
+          <div class="col-3 title position">2020&ndash;2021</div>
           <div class="col-12 title institute">University of Cambridge, Cambridge, UK</div>
-          <div class="col-12 detail">Thesis: Modeling Bacterial Alternative Sigma Factors and Their Competition |
-            Advisor: Dr. James Locke</div>
-          <div class="col-12 detail">Scores: 82/100 (with distinction)</div>
         </div>
         <div class="row mt-2 no_break" id="xjtu">
           <div class="col-9 title position">B.Eng. in Bioengineering, Honors Science Program</div>
-          <div class="col-3 title position">Jun 2020</div>
-          <div class="col-12 title institute">Xi'an Jiaotong University, Xi'an, China</div>
-          <div class="col-12 detail">Thesis: A Computational Method for Automated
-            Modeling of Logic Gates in Synthetic Circuits and Human Transcriptome (top 1%) | Advisor: Prof. Tielin Yang</div>
-          <div class="col-12 detail">Honors Youth Program
-            (skipping high school)</div>
-          <div class="col-12 detail">GPA: 3.92/4.3 | Ranking: 1/30</div>
+          <div class="col-3 title position">2016&ndash;2020</div>
+          <div class="col-12 title institute">Xian Jiaotong University, Xi'an, China</div>
         </div>
         <div class="row mt-2 no_break" id="berkeley">
-          <div class="col-9 title position">Exchange semester</div>
-          <div class="col-3 title position">Fall 2018</div>
+          <div class="col-9 title position">Exchange program</div>
+          <div class="col-3 title position">2018</div>
           <div class="col-12 title institute">
-            University of California–Berkeley, Berkeley, CA
+            University of California Berkeley, Berkeley, CA
           </div>
-          <div class="col-12 detail">GPA: 4.0/4.0</div>
-        </div>
-      </div>
-    </div>
-    <!-- coursework -->
-    <div class="row mt-3" id="coursework">
-      <div class="col">
-        <div class="row no_break">
-          <div class="col-12 title section">SELECTED COURSEWORK</div>
-        </div>
-        <div class="row mt-2 no_break">
-          <div class="col-4 detail">Deep Learning</div>
-          <div class="col-4 detail">Machine Learning</div>
-          <div class="col-4 detail">Genetic Sequence Analysis</div>
-          <div class="col-4 detail">Genomics</div>
-          <div class="col-4 detail">Proteomics</div>
-          <div class="col-4 detail">Principles of Synthetic Biology</div>
-          <div class="col-4 detail">Genetic Engineering</div>
-          <div class="col-4 detail">Microbiology</div>
-          <div class="col-4 detail">Biophysical Chemistry</div>
-          <div class="col-4 detail">Structural Biology</div>
-          <div class="col-4 detail">Systems Biology</div>
-          <div class="col-4 detail">Population Genetics</div>
         </div>
       </div>
     </div>
@@ -144,167 +123,87 @@
         </div>
         <div class="row mt-2 no_break" id="sigma">
           <div class="col-9 title position">Master's Thesis</div>
-          <div class="col-3 title position">May 2021 – Aug 2021</div>
-          <div class="col-9 title institute">University of Cambridge, Cambridge, UK</div>
+          <div class="col-3 title position">2021</div>
+          <div class="col-9 title institute">Sainsbury Laboratory, University of Cambridge</div>
           <div class="col-3 title institute">Advisor: Dr. James Locke</div>
           <div class="col">
-            <ul class="row detail">
+            <ul class="row detail m-0">
               <li>
-                Simulated the bacterial alternative sigma factor circuit with a simplified but mechanistic model
-                using the Gillespie algorithm.
-              </li>
-              <li>
-                Mapped different behaviors of the circuit to a parametric space using a classification algorithm.
-                Demonstrated that ultrasensitivity is important for several behaviors, including bistability.
-              </li>
-              <li>
-                Proposed two new mechanisms for bistability to occur without ultrasensitivity when two sigma factors
-                compete for a limited number of RNA polymerase core enzymes.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-2 no_break" id="surface">
-          <div class="col-9 title position">Summer Intern</div>
-          <div class="col-3 title position">Aug 2020</div>
-          <div class="col-9 title institute">Westlake University, Hangzhou, China</div>
-          <div class="col-3 title institute">Advisor: Dr. Jing Huang</div>
-          <div class="col">
-            <ul class="row detail">
-              <li>
-                Simulated, using molecular dynamics (MD), how the surface tension of NaCl solution differs
-                under CGenFF additive force field and Drude polarizable forcefield, and 
-                confirmed the applicability of Gibbs adsorption theorem in MD. 
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-2 no_break" id="logic_gates">
-          <div class="col-9 title position">Bachelor's Thesis</div>
-          <div class="col-3 title position">Dec 2019 – Jun 2020</div>
-          <div class="col-9 title institute">
-            Xi'an Jiaotong University, Xi'an, China
-          </div>
-          <div class="col-3 title institute">Advisor: Prof. Tielin Yang</div>
-          <div class="col">
-            <ul class="row detail">
-              <li>
-                Designed <a href="https://github.com/RandolphLiu/BioLoGI">BioLoGI</a>
-                (<u>Bio</u>logical <u>Lo</u>gic <u>G</u>ate <u>I</u>nference system),
-                a computational method for automated and standardized modeling of 
-                logic gate–like regulations in synthetic circuits and human transcriptome
-                with strong model interpretability and high performance.
-              </li>
-              <li>
-                Detected logic gate clusters pivoting REG1A in lipase metabolic pathways and EGFL7 in cardiovascular tissues 
-                leveraging GTEx bulk RNA sequencing data.
-              </li>
-              <li>
-                Applied BioLoGI to single-cell RNA sequencing data of human embryonic stem cells and
-                identified important roles played by long non-coding RNA, which involves in about 40% of single-input logic gates.
+                Modeling the dynamics of bacterial alternative sigma factors and their competition. <a href="https://github.com/yuja-liu/mphil_thesis/raw/main/thesis.pdf">Thesis</a>.
               </li>
             </ul>
           </div>
         </div>
         <div class="row mt-2 no_break" id="isolates_browser">
           <div class="col-9 title position">Research Assistant</div>
-          <div class="col-3 title position">Jul 2019 – Sept 2019</div>
+          <div class="col-3 title position">2019</div>
           <div class="col-9 title institute">
-            Lawrence Berkeley National Laboratory, Berkeley, CA
+            University of California Berkeley
           </div>
           <div class="col-3 title institute">Advisor: Prof. Adam Arkin</div>
           <div class="col">
-            <ul class="row detail">
+            <ul class="row detail m-0">
               <li>
-                Built and still maintaining <a href="http://isolates.genomics.lbl.gov/index">The ENIGMA Explorer</a>
-                (<a href="https://github.com/RandolphLiu/enigma_explorer">source code</a>), 
-                a web service for bacterial isolates searching and sharing, sequence analysis, and visualization of experiments
-                for ENIGMA, a consortium of 19 labs across the US focusing on microbial ecology.
-              </li>
-              <li>
-                Implemented both the point-and-click GUI, and script-accessible RESTful API, upon which flexible workflows can be built.
-              </li>
-              <li>
-                Studied the mechanism of the "warfare" between the plant pathogen <i>Xanthomonas campestris</i> pv. <i>campestris</i>
-                and several <i>Pseudomonas</i> using Random Barcode Transposon-site Sequencing (RB-Tnseq).
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-2 no_break" id="bnip">
-          <div class="col-9 title position">Research Assistant</div>
-          <div class="col-3 title position">Apr 2018 – Jun 2019</div>
-          <div class="col-9 title institute">
-            Xi'an Jiaotong University, Xi'an, China
-          </div>
-          <div class="col-3 title institute">Advisor: Prof. Tielin Yang</div>
-          <div class="col">
-            <ul class="row detail">
-              <li>Discovered BNIP3 as a novel methylation biomarker for renal cancer and breast cancer using differential expression analysis,
-                log-rank test, Cox proportional hazards regression, and co-expression network.
+                <a href="http://isolates.genomics.lbl.gov/index">ENIGMA Explorer</a>,
+                a web service for bacterial isolates searching and sharing, sequence analysis, and visualization of experiments.
               </li>
             </ul>
           </div>
         </div>
         <div class="row mt-2 no_break" id="iGEM">
           <div class="col-9 title position">
-            Team Leader of International Genetically Engineered Machine (iGEM) Competition
+            International Genetically Engineered Machine (iGEM) Competition
           </div>
-          <div class="col-3 title position">Feb 2018 – Oct 2018</div>
-          <div class="col-12 title institute">Advisor: Prof. Xiaoyun Lu</div>
+          <div class="col-3 title position">2018</div>
+          <div class="col-9 title institute">Xian Jiaotong University</div>
+          <div class="col-3 title institute">Advisor: Prof. Xiaoyun Lu</div>
           <div class="col">
-            <ul class="row detail">
+            <ul class="row detail m-0">
               <li>
-                Engineered <i>E. coli</i> by a genetic circuit that converts the production of D-psicose, a novel healthy sugar,
-                to the growth benefit of mutants with more than 30-fold sensitivity.
-              </li>
-              <li>
-                Performed directed evolution experiments on the engineered bacteria carrying shuffling PCR-constructed 
-                sequence library to identify optimal D-psicose producing strain, 
-                which the method is named <a href="http://2018.igem.org/Team:XJTU-China">DEcose</a>.
+                <a href="https://2018.igem.org/Team:XJTU-China">DEcose</a>, a biosensor-based directed evolution method to promote D-psicose bioproduction.
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- patents -->
-    <div class="row mt-3" id="patents">
+    <!--publications-->
+    <!--
+    <div class="row mt-3" id="publications">
       <div class="col">
         <div class="row no_break">
-          <div class="col-12 title section">PATENTS</div>
+          <div class="col-12 title section">PUBLICATION</div>
         </div>
-        <ul class="row detail mt-2 no_break">
-          <li>
-            Tielin Yang, <b>Yujia Liu</b>, Congcong Liu, Yan Guo, Shanshan Dong.
-            2020. Automated Modeling Method for Genetic Circuits and Transcriptional Regulations.
-            China Patent 202011035802.8, filed September 27, 2020. Patent pending.
-          </li>
-          <li>
-            Dan Tan, <b>Yujia Liu</b>, Xinlei Fang, Peiyao Fan, Yun Yu, Xiaoyun Lu.
-            2020. Recombinant Plasmid and Engineered Bacteria, Their Construction Method, and the Application in Promoting the Yield of D-psicose.
-            China Patent 202010380209.0, filed May 08, 2020. Patent pending.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- leadership -->
-    <div class="row mt-3" id="leadership">
-      <div class="col">
-        <div class="row no_break">
-          <div class="col-12 title section">LEADERSHIP</div>
-        </div>
-        <div class="row mt-2 no_break" id="tiaozhan">
-          <div class="col-9 title position">Operation and Maintenance Director</div>
-          <div class="col-3 title position">Jun 2018 – Jun 2019</div>
-          <div class="col-12 title institute">
-            Tiaozhan.com (Our university portal website, including the video sharing platform and our open-source mirror)
+        <div class="row mt-2 no_break">
+          <div class="col">
+            <ul class="row m-0 detail publication">
+              <li>
+              Braunstein, E. M., Imada, E., Pasca, S., Wang, S., Chen, H., Alba, C., Hupalo, D. N., Wilkerson, M., Dalgard, C. L., Ghannam, J., <b>Liu, Y.</b>, Marchionni, L., Moliterno, A., Hourigan, C. S., & Gondek, L. P. (2023).
+              Recurrent germline variant in ATM associated with familial myeloproliferative neoplasms. Leukemia, 37(3), Article 3. <a href="https://doi.org/10.1038/s41375-022-01797-6">https://doi.org/10.1038/s41375-022-01797-6</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row mt-2 no_break" id="ibm">
-          <div class="col-9 title position">Leader of Qt Department</div>
-          <div class="col-3 title position">Jun 2017 – Jun 2018</div>
-          <div class="col-12 title institute">IBM Students Technology Club</div>
+      </div>
+    </div>
+    -->
+    <!-- teaching experience -->
+    <div class="row mt-3" id="teaching">
+      <div class="col">
+        <div class="row no_break">
+          <div class="col-12 title section">TEACHING EXPERIENCE</div>
+        </div>
+        <div class="row mt-2 no_break" id="sigma">
+          <div class="col-12 title position">Teaching Assistant for Nucleic Acid Structure and Function</div>
+          <div class="col-12 title institute">Department of Biochemistry and Molecular Biology, University of Chicago</div>
+          <div class="col">
+            <ul class="row detail m-0">
+              <li>
+                Graduate biochemistry course. Led discussions, a technique demo session and review sessions 
+                on nucleic acid structure, reaction mechanisms, enzymatics and general molecular biology.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -315,42 +214,15 @@
           <div class="col-12 title section">HONORS &amp; AWARDS</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-9 title position">Outstanding Bachelor's Thesis (top 1%)</div>
-          <div class="col-3 title position">Jun 2020</div>
-          <div class="col-9 title position">XJTU Presidential Scholarship (10 per year)</div>
-          <div class="col-3 title position">Nov 2019</div>
-          <div class="col-9 title position">XJTU First Prize Scholarship</div>
-          <div class="col-3 title position">Nov 2018</div>
-          <div class="col-9 title position">Siyuan Scholarship</div>
-          <div class="col-3 title position">Nov 2017, Nov 2016</div>
-        </div>
-        <div class="row mt-2 no_break">
-          <div class="col-9 title position">
-            iGEM Gold Medal, Advisor
-          </div>
-          <div class="col-3 title position">Nov 2019</div>
-          <div class="col-9 title position">
-            iGEM Gold Medal, Team Leader
-          </div>
-          <div class="col-3 title position">Nov 2018</div>
-        </div>
-      </div>
-    </div>
-    <!-- skills -->
-    <div class="row mt-3" id="skills">
-      <div class="col">
-        <div class="row no_break">
-          <div class="col-12 title section">SKILLS</div>
-        </div>
-        <div class="row mt-2 no_break">
-          <div class="col-4 title position">Programming Languages:</div>
-          <div class="col-8 detail">
-            C++, C#, Python, R, Julia, JavaScript, PHP
-          </div>
-          <div class="col-4 title position">Languages</div>
-          <div class="col-8 detail">
-            English (fluent), German (basics), Chinese (native speaker)
-          </div>
+          <div class="col-9 title position">Dean's International Student Fellowship</div>
+          <div class="col-3 title position">2022</div>
+          <div class="col-12 title institute">University of Chicago</div>
+          <div class="col-9 title position">Outstanding Bachelor's Thesis</div>
+          <div class="col-3 title position">2020</div>
+          <div class="col-12 title institute">Xian Jiaotong University</div>
+          <div class="col-9 title position">Presidential Scholarship</div>
+          <div class="col-3 title position">2019</div>
+          <div class="col-12 title institute">Xian Jiaotong University</div>
         </div>
       </div>
     </div>

@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="utf-8">
   <!-- include bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <style>
   body{
     /* page paddings */
-    padding: 3em 3em 3em 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     /* !!! do not change margin, margins are used for horizontal aligning */
   }
   .title{
@@ -24,6 +27,7 @@
     font-family:  Helvetica, sans-serif;
   }
   .publication{
+    /* relative to root (html) font size */
     font-size: 0.875rem;
   }
   .section{
@@ -42,16 +46,16 @@
   }
   /* printing configs */
   @media print {
-    @page {
-      margin: 2cm;
-    }
     body {
-      /* remove existing page paddings
-      since the doc will span multiple pages, page margin is designated by @page */
-      padding: 0;
-      /* this is a rough estimation of font upscale due to 
-      margin added when printing */
-      font-size: 14pt;
+      /* Force bootstrap to recognize papers as medium-sized devices */
+      min-width: 796px;
+    }
+    html {
+      font-size: 14px;
+    }
+    .row{
+      /* Force mt-1 margins when printing giving a more compact look*/
+      margin-top: 0.25em !important;
     }
   }
 </style>
@@ -62,13 +66,14 @@
   <!-- margin size: -->
   <!-- m-1 0.25 rem, m-2 0.5 rem, m-3 1 rem, m-4 1.5 rem, m-5 3 rem -->
   <!-- 1 rem = 16 px = 12 pt = 1/6 inch -->
-  <div class="container">
+  <!-- 100% for any device < md i.e. phones. The webpage is designed such that with < md devices everythings will be rendered as single column -->
+  <div class="container-md">
     <!-- name and contacts -->
     <div class="row no_break">
-      <div class="col-6 title" id="name">
+      <div class="col-md-4 col-12 title" id="name">
         <h1>Yujia Liu</h1>
       </div>
-      <div class="col-6 detail" id="contacts">
+      <div class="col-md-8 col-12 detail" id="contacts">
         <!--
         <div class="row">
           <div class="col-12">Phone: +1 312-927-6707</div>
@@ -93,31 +98,32 @@
           <div class="col title section">EDUCATION</div>
         </div>
         <div class="row mt-2 no_break" id="uchi">
-          <div class="col-8 title position">Ph.D. in Biochemistry and Molecular Biophysics</div>
-          <div class="col-4 title position">2021&ndash;</div>
-          <div class="col-8 title institute">University of Chicago, Chicago, IL</div>
-          <div class="col-4 title institute">Advisor: Prof. Michael Rust</div>
+          <!-- Anything >= md will render as two column. Otherwise single -->
+          <div class="col-md-7 col-12 title position">Ph.D. in Biochemistry and Molecular Biophysics</div>
+          <div class="col-md-5 col-12 title position">2021&ndash;</div>
+          <div class="col-md-7 col-12 title institute">University of Chicago, Chicago, IL</div>
+          <div class="col-md-5 col-12 title institute">Advisor: Prof. Michael Rust</div>
         </div>
         <div class="row mt-2 no_break" id="cam">
-          <div class="col-8 title position">M.Phil. in Computational Biology, with Distinction</div>
-          <div class="col-4 title position">2020&ndash;2021</div>
-          <div class="col-8 title institute">University of Cambridge, Cambridge, UK</div>
-          <div class="col-4 title institute">Advisor: Prof. James Locke</div>
+          <div class="col-md-7 col-12 title position">M.Phil. in Computational Biology, with Distinction</div>
+          <div class="col-md-5 col-12 title position">2020&ndash;2021</div>
+          <div class="col-md-7 col-12 title institute">University of Cambridge, Cambridge, UK</div>
+          <div class="col-md-5 col-12 title institute">Advisor: Prof. James Locke</div>
           <div class="col-12 detail">Thesis: Modeling the Dynamics of Bacterial Alternative Sigma Factors and Their Competition</div>
         </div>
         <div class="row mt-2 no_break" id="xjtu">
-          <div class="col-8 title position">B.Eng. in Bioengineering, Honors Science Program</div>
-          <div class="col-4 title position">2016&ndash;2020</div>
-          <div class="col-8 title institute">Xian Jiaotong University, Xi'an, China</div>
-          <div class="col-4 title institute">Advisor: Prof. Xiaoyun Lu & Prof. Tielin Yang</div>
+          <div class="col-md-7 col-12 title position">B.Eng. in Bioengineering, Honors Science Program</div>
+          <div class="col-md-5 col-12 title position">2016&ndash;2020</div>
+          <div class="col-md-7 col-12 title institute">Xian Jiaotong University, Xi'an, China</div>
+          <div class="col-md-5 col-12 title institute">Advisor: Profs. Xiaoyun Lu & Tielin Yang</div>
         </div>
         <div class="row mt-2 no_break" id="berkeley">
-          <div class="col-8 title position">Exchange program</div>
-          <div class="col-4 title position">2018</div>
-          <div class="col-8 title institute">
+          <div class="col-md-7 col-12 title position">Exchange program</div>
+          <div class="col-md-5 col-12 title position">2018</div>
+          <div class="col-md-7 col-12 title institute">
             University of California Berkeley, Berkeley, CA
           </div>
-          <div class="col-4 title institute">Advisor: Prof. Adam Arkin</div>
+          <div class="col-md-5 col-12 title institute">Advisor: Prof. Adam Arkin</div>
         </div>
       </div>
     </div>
@@ -131,16 +137,16 @@
         <div class="col-12 position">
           Biological oscillator designs that allow growth-independent period 
         </div>
-        <div class="col-8 title">
-          Talk and poster at ASCB|EMBO Cell Bio Annual Meeting
+        <div class="col-md-7 col-12 title">
+          Talk and poster at the ASCB-EMBO Cell Bio Annual Meeting
         </div>
-        <div class="col-4 title">
+        <div class="col-md-5 col-12 title">
           San Diego, CA. 2024
         </div>
-        <div class="col-8 title">
-          Poster at Stochastic Physics in Biology Gordon Research Seminar/Conference
+        <div class="col-md-7 col-12 title">
+          Poster at the Stochastic Physics in Biology Gordon Research Seminar & Conference
         </div>
-        <div class="col-4 title">
+        <div class="col-md-5 col-12 title">
           Ventura, CA. 2025
         </div>
         </div>
@@ -153,20 +159,20 @@
           <div class="col-12 title section">TEACHING & MENTORING</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-lg-8 col-sm-12 title position">Nucleic Acid Structure and Function BCMB 30600</div>
-          <div class="col-lg-4 col-sm-12 title position">Autumn 2023</div>
-          <div class="col-12 title institute">Teaching assistant. With Prof. Phoebe Rice and Dr. Jingyi Fei</div>
+          <div class="col-md-7 col-12 title position">Nucleic Acid Structure and Function BCMB 30600</div>
+          <div class="col-md-5 col-12 title position">Autumn 2023</div>
+          <div class="col-12 title institute">Teaching assistant. With Profs. Phoebe Rice and Jingyi Fei</div>
           <div class="col-12 detail">Introductory graduate level course</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-lg-8 col-sm-12 title position">Biological Dynamics BIOS 20236</div>
-          <div class="col-lg-4 col-sm-12 title position">Spring 2024</div>
-          <div class="col-12 title institute">Teaching assistant. With Prof. Edwin Munro and Prof. Michael Rust</div>
+          <div class="col-md-7 col-12 title position">Biological Dynamics BIOS 20236</div>
+          <div class="col-md-5 col-12 title position">Spring 2024</div>
+          <div class="col-12 title institute">Teaching assistant. With Profs. Edwin Munro and Michael Rust</div>
           <div class="col-12 detail">Advance undergraduate course with computer lab</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-lg-8 col-sm-12 title position">National Institute for Theory and Mathematics in Biology Undergraduate Research Program</div>
-          <div class="col-lg-4 col-sm-12 title position">Summer 2024</div>
+          <div class="col-md-7 col-12 title position">National Institute for Theory and Mathematics in Biology Undergraduate Research Program</div>
+          <div class="col-md-5 col-12 title position">Summer 2024</div>
           <div class="col-12 detail">Mentored Helen Yoo (Bradley University).
             Calculating temperature-compensated limit cycles </div>
         </div>
@@ -197,15 +203,15 @@
           <div class="col-12 title section">HONORS &amp; AWARDS</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-8 title position">Dean's International Student Fellowship</div>
-          <div class="col-4 title position">2022</div>
-          <div class="col-12 title institute">University of Chicago</div>
+          <div class="col-md-7 col-12 title position">Dean's International Student Fellowship</div>
+          <div class="col-md-5 col-12 title position">2022</div>
+          <div class="col-12 col-12 title institute">University of Chicago</div>
         </div>
         <div class="row mt-2 no_break">
-          <div class="col-8 title position">Outstanding Bachelor's Thesis</div>
-          <div class="col-4 title position">2020</div>
-          <div class="col-8 title position">Presidential Scholarship</div>
-          <div class="col-4 title position">2019</div>
+          <div class="col-md-7 col-12 title position">Outstanding Bachelor's Thesis</div>
+          <div class="col-md-5 col-12 title position">2020</div>
+          <div class="col-md-7 col-12 title position">Presidential Scholarship</div>
+          <div class="col-md-5 col-12 title position">2019</div>
           <div class="col-12 title institute">Xian Jiaotong University</div>
         </div>
       </div>

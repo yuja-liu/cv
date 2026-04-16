@@ -1,3 +1,4 @@
 cv_examples
 *.pdf
 index.old.html
+.DS_Store
